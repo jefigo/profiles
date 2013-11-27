@@ -4,6 +4,7 @@ gem 'rails', '4.0.1'
 
 gem 'devise'
 gem 'jbuilder', '~> 1.2'
+gem 'jquery-rails'
 gem 'oauth'
 gem 'omniauth', github: 'intridea/omniauth'
 gem 'omniauth-google-apps'
