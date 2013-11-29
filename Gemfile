@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.1'
 
+gem 'bootstrap-sass', '~> 3.0.2.0'
 gem 'devise'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
