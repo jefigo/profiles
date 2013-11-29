@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title Crowdint profiles
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body
+    .container
+      = yield
+  %footer
+    .container
+      %p#copyright Unauthorized use of this document is forbidden, contact: estaban.cortes@crowdint.com for details, Crowd Interactive 2013
+      %p#info info@crowdint.com           www.crowdint.com
+
