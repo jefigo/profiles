@@ -1,0 +1,30 @@
+.row
+  .col-xs-12.col-md-12.col-sm-12#logo
+    =image_tag 'crowdint_logo'
+  .col-xs-4.col-md-6.col-sm-4#profile-image
+    = image_tag 'profile_image'
+  .col-xs-8.col-md-6.col-sm-8#profile-info
+    #name
+      %label= 'Player'
+      %p#user-name= @user.name
+    .scroll-pane#user-info
+      #position
+        %label= 'Position'
+        %p#user-position= @user.position
+      #skills
+        %label= 'Skills'
+        %ul#skills-list
+          %li= 'Ruby on Rails'
+          %li= 'JavaScript'
+          %li= 'jQuery'
+          %li= 'Ruby'
+          %li= 'HTML'    
+      #education
+        %label= 'Education'
+        %p= @user.education
+      #english-level
+        %label= 'English level'
+        %p= @user.english_level
+      #profile
+        %label= 'Profile'
+        = simple_format(@user.profile, html_options={}, options={})
