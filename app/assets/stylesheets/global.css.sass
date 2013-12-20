@@ -1,23 +1,44 @@
-body
-  margin: 0 auto
-  width: 100%
+html, body
+  height: 100%
 
-footer
-  bottom: 0
-  position: absolute
-  width: 100%
+#header
+  h1
+    color: #fff
+body
+  background-color: #009697
   margin: 0 auto
+  width: 100%
 
   .container
-    background-color: #6c1e0a
+    min-height: 100%
+    height: auto !important
+    height: 100%
+    margin: 0 auto -100px /* the bottom margin is the negative value of the footer's height */
+
+  .footer, .push
+    height: 100px /* .push must be the same height as .footer */
+
+  #logo
+    height: 75px
+    margin: 20px 0
+
+.footer
+  background-color: #6c1e0a
+  bottom:  0
+  margin: 0 auto
+  padding: 30px 0 0px
+  position: absolute
+  width: 100%
+
+  .container
     color: white
-    font-size: 11px
     height: 70px
     text-align: center
-    padding: 30px 0 0px
 
     #copyright
+      font-size: 11px
       margin: 0 0 16px
 
     #info
+      font-size: 11px
       white-space: pre
