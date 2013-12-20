@@ -13,5 +13,8 @@
 //= require bootstrap
 //= require jquery
 //= require jquery_ujs
+//= require jquery.jscrollpane
+//= require jquery.mousewheel
+//= require jquery.mwheelintent
 //= require turbolinks
 //= require_tree .
