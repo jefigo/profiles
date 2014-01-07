@@ -1,0 +1,5 @@
+= render partial: 'shared/header', locals: { title: 'Our Team' }
+
+.row
+  -@users.each do |user|
+    .col-md-3= link_to user.name, user_path(user)
