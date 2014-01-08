@@ -1,9 +1,14 @@
 .row
-  .col-xs-12.col-md-12.col-sm-12#logo
-    =image_tag 'crowdint_logo'
-  .col-xs-4.col-md-6.col-sm-4#profile-image
-    = image_tag 'profile_image'
-  .col-xs-8.col-md-6.col-sm-8#profile-info
+  .col-xs-11.col-md-11.col-sm-11#logo
+    =image_tag 'crowdint_logo.png'
+  .col-xs-3.col-md-5.col-sm-3
+    #profile-image
+      = image_tag 'cards_background.png', id: 'cards-background', width: 230, height: 350
+      = image_tag 'users/Ivan_front_01.jpg', id: 'user-front-image', width: 220, height: 338
+      = image_tag 'users/Ivan_back_01.jpg', id: 'user-back-image', width: 220, height: 338
+      .span
+        = image_tag 'flip_btn01_up.png', id: 'flip-image', width: 220, height: 338
+  .col-xs-4.col-md-5.col-sm-5#profile-info
     #name
       %label= 'Player'
       %p#user-name= @user.name
@@ -13,12 +18,21 @@
         %p#user-position= @user.position
       #skills
         %label= 'Skills'
-        %ul#skills-list
+        %ul
           %li= 'Ruby on Rails'
           %li= 'JavaScript'
           %li= 'jQuery'
           %li= 'Ruby'
-          %li= 'HTML'    
+          %li= 'HTML'   
+          %li= 'CoffeScript'
+          %li= 'Css'
+          %li= 'MySQL'
+          %li= 'SQL'
+          %li= 'C#'
+          %li= 'C++'
+          %li= 'Java'
+          %li= 'Front End'
+          %li= 'HAML'    
       #education
         %label= 'Education'
         %p= @user.education
@@ -27,4 +41,26 @@
         %p= @user.english_level
       #profile
         %label= 'Profile'
-        = simple_format(@user.profile, html_options={}, options={})
+        = simple_format(@user.profile)
+
+  .col-xs-1.col-md-1.col-sm-1#badges-ribon
+    %ul
+      %li= image_tag 'ribon_top.png'
+      %li
+        = link_to '#', title: '@jefigo', data: { toggle: 'tooltip', placement: 'bottom' }, target: '_blanck' do
+          = image_tag 'twitter_badge.png'
+      %li
+        = link_to '#', title: 'jefigo', data: { toggle: 'tooltip', placement: 'bottom' }, target: '_blanck' do
+          = image_tag 'github_badge.png'
+      %li
+        = link_to '#', title: 'behance', data: { toggle: 'tooltip', placement: 'bottom' }, target: '_blanck' do
+          = image_tag 'behance_badge.png'
+      %li
+        = link_to '#', title: 'behance', data: { toggle: 'tooltip', placement: 'bottom' }, target: '_blanck' do
+          = image_tag 'behance_badge.png'
+      %li
+        = link_to '#', title: @user.email, data: { toggle: 'tooltip', placement: 'bottom' }, target: '_blanck' do
+          = image_tag 'email_badge.png'
+      %li= image_tag 'ribon_tip.png'
+
+

@@ -10,11 +10,12 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require bootstrap
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap
 //= require jquery.jscrollpane
 //= require jquery.mousewheel
 //= require jquery.mwheelintent
 //= require turbolinks
 //= require_tree .
+

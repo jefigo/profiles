@@ -1,44 +1,128 @@
 #user-name
-  font-size: 24px
+  font-size: 32px
 
-#skills-list
-  color: #fbfbfb
-  list-style: none
-  padding: 0
+#user-position
+  //color: #80D0D1
+  font-size: 20px
+
+#user-info
+  margin-top: 20px
+
+#cards-background
+  float: right
+  margin: 20px 62px 0 0
+
+#user-front-image, #user-back-image
+  float: right
+  margin: -357px 55px 0
+
+#user-back-image
+  display: none
+  
+#skills
+  margin-bottom: 20px
+
+  ul
+    font: 16px 'Calibri', 'Regular'
+    display: block
+    list-style: none
+    padding: 0
+    
+    li
+      display: inline-block
+      margin-right: 10px
+      width: 110px
 
 label
   color: #3c5863
+  font-family: 'Calibri', 'Regular'
   font-size: 12px
   padding: 0
 
 p
-  color: #fdfdfb
   font-size: 14px
 
+.span
+  background: transparent
+  height: 324px
+  margin-left: 106px
+  position: relative
+  top: 20px
+  width: 207px
+  
+  &:hover
+    background-color: rgba(0,150,151, 0.7)
+
+#flip-image
+  height: 80px
+  margin-left: 60px
+  position: absolute
+  top: 132px
+  visibility: hidden
+  width: 80px
+
+
 #profile-info
+  color: #fff
+  margin-top: 7px
   padding-bottom: 50px
+  width: 450px
 
 #user-info
   border-left: 2px solid #53b9bd
+  width: 420px
 
-#name, #position, #education, #english-level  
+#name
   p
-    margin-top: -5px
+    margin-top: -13px 
 
-#profile p
-  margin-top: -5px
+#position, #education, #english-level, #profile 
+  p
+    margin: -4px 0 18px
 
-#skills label
-  margin: 0
+#education, #english-level, #profile
+  label
+    margin-bottom: 7px
+
+#position
+  margin-top: -6px
 
 .scroll-pane
   width: 100%
   height: 600px
   overflow: auto
 
+  &:focus
+    outline: none
+
 .jspVerticalBar
   display: none
 
 .jspPane
-  margin-left: 20px !important
+  margin-left: 17px !important
 
+#profile
+  width: 400px
+
+#badges-ribon 
+  margin-top: -135px
+  
+  ul
+    list-style: none
+    
+    li:last-child
+      margin-top: -3px
+
+  .tooltip 
+    opacity: 1
+    .tooltip-arrow
+      border-bottom-color: #fff
+      border-width: 0 7px 9px
+    .tooltip-inner
+      background-color: #fff
+      color: #20938e
+      font-size: 16px
+      height: 30px
+      margin-top: 4px
+      max-width: 250px
+      min-width: 100px
